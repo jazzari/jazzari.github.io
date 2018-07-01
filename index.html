@@ -11,36 +11,52 @@
 
    	   /* GLOBAL STYLES */
 
+      html, body {
+      	margin: 0;
+      	padding: 0;
+      }
+      body {
+      	font-size: 62.5%;
+      }
+      h1 {
+      	font-size: 2em;
+      	margin-top: 0;
+      }
 	  a{
-	  	color: rgba(209, 42, 224, 0.2);
+	  	color: #f00;
         }
-      div.bio-box {
-      	border: 1px solid green;
-      }  
-      h2 {
-	  	font-size: 30px;
-	  }
+
+      /* HERO STYLES */
+      .full-hero {
+      	background-color: #c7dbfc;
+      	height: 25vw;
+      	width: 50vw;
+      }
+
        /* SOCIAL STYLES */
 	  .social-link {
 	  	background: rgba(150, 150, 150, 0.5);
-	  	color: #00f;
+	  	color: blue;
 	  }
 	  
       /* BIO STYLES */
       .bio-wrapper {
-      	/*width: 500px;
-      */ } 
+      	/*font-size: 24px; */
+       } 
 	  .bio-box {
 	  	border: 1px solid black; 
-	  	width: 50%;
-	  	margin: 10%;
-	  	font-size: 150%;
+	  	font-size: 1em;
+	    width: 50%;
 	  }
-	  .bio-copy a {
-	  	color: green;
-	  	font-size: 150%;
+	  .bio-box h3 {
+	  	font-size: 1.5em;
+	  }
+	  .bio-copy  {
+	  	font-size: 1em;
 	  }  
-
+      .bio-copy a {
+      	color: green;
+      }
 
 
 	</style>
@@ -48,24 +64,25 @@
 
 <body>
   
-
+  <div class="full-hero hero-home">
   <h1>I'm an h1</h1>
 
   <ul>
-  	<div class="social-link">
+  	
    	<li>
-  		<a href="http://example.com/">Link</a>
+  		<a href="http://example.com/" class="social-link">Link</a>
   	</li>
 
   	<li>
-  		<a href="http://example.com/">Link</a>
+  		<a href="http://example.com/" class="social-link">Link</a>
   	</li>
 
   	<li>
-  		<a href="http://example.com/" >Link</a>
+  		<a href="http://example.com/" class="social-link" >Link</a>
   	</li>
-  </div>
+  
   </ul>
+  </div>
 
   <h2>I'm an H2</h2>
 
